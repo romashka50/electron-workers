@@ -1,0 +1,115 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "electron-workers@1.7.0",
+        "scope": null,
+        "escapedName": "electron-workers",
+        "name": "electron-workers",
+        "rawSpec": "1.7.0",
+        "spec": "1.7.0",
+        "type": "version"
+      },
+      "/Volumes/Data/Projects/NodeJS/EasyErp-Desktop/node_modules/electron-html-to"
+    ]
+  ],
+  "_from": "electron-workers@1.7.0",
+  "_id": "electron-workers@1.7.0",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/electron-workers",
+  "_nodeVersion": "0.10.45",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/electron-workers-1.7.0.tgz_1465097120544_0.21101286145858467"
+  },
+  "_npmUser": {
+    "name": "bjrmatos",
+    "email": "bjrmatos@gmail.com"
+  },
+  "_npmVersion": "2.15.6",
+  "_phantomChildren": {
+    "isexe": "1.1.2"
+  },
+  "_requested": {
+    "raw": "electron-workers@1.7.0",
+    "scope": null,
+    "escapedName": "electron-workers",
+    "name": "electron-workers",
+    "rawSpec": "1.7.0",
+    "spec": "1.7.0",
+    "type": "version"
+  },
+  "_requiredBy": [
+    "/electron-html-to"
+  ],
+  "_resolved": "https://registry.npmjs.org/electron-workers/-/electron-workers-1.7.0.tgz",
+  "_shasum": "1f7866531828d2cc4d267cb77b391ebfbe829008",
+  "_shrinkwrap": null,
+  "_spec": "electron-workers@1.7.0",
+  "_where": "/Volumes/Data/Projects/NodeJS/EasyErp-Desktop/node_modules/electron-html-to",
+  "author": {
+    "name": "BJR Matos",
+    "email": "bjrmatos@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/bjrmatos/electron-workers/issues"
+  },
+  "dependencies": {
+    "debug": "2.2.0",
+    "lodash.findindex": "4.4.0",
+    "net-cluster": "0.0.2",
+    "portscanner": "1.0.0",
+    "uuid": "2.0.2",
+    "which": "1.2.9"
+  },
+  "description": "Run electron scripts in managed workers",
+  "devDependencies": {
+    "babel": "5.8.29",
+    "electron": "1.4.0",
+    "eslint": "2.11.1",
+    "eslint-config-airbnb-base": "3.0.1",
+    "eslint-plugin-import": "1.8.1",
+    "in-publish": "2.0.0",
+    "mocha": "2.5.3",
+    "npm-run-all": "2.1.1",
+    "rimraf": "2.5.2",
+    "should": "9.0.0"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "1f7866531828d2cc4d267cb77b391ebfbe829008",
+    "tarball": "https://registry.npmjs.org/electron-workers/-/electron-workers-1.7.0.tgz"
+  },
+  "gitHead": "ff813a22d9df2c0b76ebdf2583976fc0b8a73376",
+  "homepage": "https://github.com/bjrmatos/electron-workers",
+  "keywords": [
+    "electron",
+    "headless",
+    "workers",
+    "electron spawn"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "maintainers": [
+    {
+      "name": "bjrmatos",
+      "email": "bjrmatos@gmail.com"
+    }
+  ],
+  "name": "electron-workers",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/bjrmatos/electron-workers.git"
+  },
+  "scripts": {
+    "build": "babel src --out-dir lib",
+    "clean": "rimraf lib",
+    "lint": "eslint src test",
+    "prepublish": "in-publish && npm-run-all lint clean build || not-in-publish",
+    "test": "mocha --timeout 7000"
+  },
+  "version": "1.7.0"
+}
